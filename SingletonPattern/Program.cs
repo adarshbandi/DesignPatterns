@@ -6,7 +6,11 @@ namespace SingletonPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Logger logger = Logger.GetInstance();
+            Console.WriteLine(logger.GetHashCode());
+            logger.Log("---------Start of Log-------");
+            TestLogger.TestingLogging();
+
         }
     }
 }
