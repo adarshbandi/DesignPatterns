@@ -4,13 +4,29 @@ using System.Text;
 
 namespace SingletonPattern
 {
-    public static class TestLogger
+    public class TestLogger
     {
-        public static void TestingLogging()
+        private ILogger _logger;
+        public TestLogger()
         {
-            Logger logger = Logger.Instance;
-            Console.WriteLine(logger.GetHashCode());
-            logger.Log("Calling from test logger class");            
+            _logger = Logger.GetLogger;
+        }
+        public void TestingLogging()
+        {
+            try
+            {
+                int a = 0;
+                var c = 2 / a;
+            }
+            catch (DivideByZeroException ex)
+            {
+                _logger.Log(ex.Message);
+            }
+        }
+
+        public void LogInfo(string message)
+        {
+            _logger.Log(message);
         }
     }
 }

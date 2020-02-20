@@ -1,0 +1,11 @@
+F:\ComprehensiveLearning\DesignPatterns\SingletonPattern\bin\Debug\netcoreapp3.0\SingletonPattern.exe
+F:\ComprehensiveLearning\DesignPatterns\SingletonPattern\bin\Debug\netcoreapp3.0\SingletonPattern.deps.json
+F:\ComprehensiveLearning\DesignPatterns\SingletonPattern\bin\Debug\netcoreapp3.0\SingletonPattern.runtimeconfig.json
+F:\ComprehensiveLearning\DesignPatterns\SingletonPattern\bin\Debug\netcoreapp3.0\SingletonPattern.runtimeconfig.dev.json
+F:\ComprehensiveLearning\DesignPatterns\SingletonPattern\bin\Debug\netcoreapp3.0\SingletonPattern.dll
+F:\ComprehensiveLearning\DesignPatterns\SingletonPattern\bin\Debug\netcoreapp3.0\SingletonPattern.pdb
+F:\ComprehensiveLearning\DesignPatterns\SingletonPattern\obj\Debug\netcoreapp3.0\SingletonPattern.csprojAssemblyReference.cache
+F:\ComprehensiveLearning\DesignPatterns\SingletonPattern\obj\Debug\netcoreapp3.0\SingletonPattern.AssemblyInfoInputs.cache
+F:\ComprehensiveLearning\DesignPatterns\SingletonPattern\obj\Debug\netcoreapp3.0\SingletonPattern.AssemblyInfo.cs
+F:\ComprehensiveLearning\DesignPatterns\SingletonPattern\obj\Debug\netcoreapp3.0\SingletonPattern.dll
+F:\ComprehensiveLearning\DesignPatterns\SingletonPattern\obj\Debug\netcoreapp3.0\SingletonPattern.pdb

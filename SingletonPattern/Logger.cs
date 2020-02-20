@@ -5,51 +5,58 @@ using System.Text;
 
 namespace SingletonPattern
 {
-    public class Logger
+    public sealed class Logger : ILogger
     {
-        private static Logger _logger;
-        private static readonly object padlock = new object();
         private Logger()
         {
-
         }
 
-        public static Logger GetInstance()
-        {
-            if (_logger == null)
-            {
-                _logger = new Logger();
-            }
-            return _logger;
-        }
+        //private static readonly Lazy<Logger> _logger = new Lazy<Logger>(() => new Logger());
 
-        // Another way using getter method
-        private static Logger _instance;
+        //public static Logger GetLogger
+        //{
+        //    get
+        //    {
+        //        return _logger.Value;
+        //    }
+        //}
 
-        public static Logger Instance
+        private static Logger _logger;
+        private static readonly object obj = new object();
+
+        public static Logger GetLogger
         {
             get
             {
-                lock (padlock)
+                if (_logger == null)
                 {
-                    if (_instance == null)
+                    lock (obj)
                     {
-                        _instance = new Logger();
+                        if (_logger == null)
+                        {
+                            _logger = new Logger();
+                        }
                     }
                 }
-                return _instance;
+                return _logger;
             }
         }
 
-        public void Log(string content)
+        public void Log(string message)
         {
-            string filePath = @"F:\Logs\TestLog.txt";
-            
-            using (StreamWriter sw = File.AppendText(filePath))
+            lock (obj)
             {
-                sw.WriteLine(DateTime.Now.ToString()+ "Just created this file");
-                sw.WriteLine(DateTime.Now.ToString() + content);
-                sw.WriteLine(DateTime.Now.ToString()+"---------End of Log-------");
+                string filename = string.Format("{0}_2.log", "Exception");
+                string filepath = string.Format(@"{0}\{1}", "C:\\Logs", filename);
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine("------------------------------------------------------------------------------------------------------------------------");
+                sb.AppendLine(DateTime.Now.ToString());
+                sb.AppendLine(message);
+                using (StreamWriter sw = new StreamWriter(filepath, true))
+                {
+                    sw.Write(sb.ToString());
+                    sw.Flush();
+                }
             }
         }
     }

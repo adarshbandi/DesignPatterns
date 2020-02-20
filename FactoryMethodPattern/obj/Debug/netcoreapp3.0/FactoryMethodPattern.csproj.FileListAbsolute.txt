@@ -1,0 +1,11 @@
+F:\ComprehensiveLearning\DesignPatterns\FactoryMethodPattern\bin\Debug\netcoreapp3.0\FactoryMethodPattern.exe
+F:\ComprehensiveLearning\DesignPatterns\FactoryMethodPattern\bin\Debug\netcoreapp3.0\FactoryMethodPattern.deps.json
+F:\ComprehensiveLearning\DesignPatterns\FactoryMethodPattern\bin\Debug\netcoreapp3.0\FactoryMethodPattern.runtimeconfig.json
+F:\ComprehensiveLearning\DesignPatterns\FactoryMethodPattern\bin\Debug\netcoreapp3.0\FactoryMethodPattern.runtimeconfig.dev.json
+F:\ComprehensiveLearning\DesignPatterns\FactoryMethodPattern\bin\Debug\netcoreapp3.0\FactoryMethodPattern.dll
+F:\ComprehensiveLearning\DesignPatterns\FactoryMethodPattern\bin\Debug\netcoreapp3.0\FactoryMethodPattern.pdb
+F:\ComprehensiveLearning\DesignPatterns\FactoryMethodPattern\obj\Debug\netcoreapp3.0\FactoryMethodPattern.csprojAssemblyReference.cache
+F:\ComprehensiveLearning\DesignPatterns\FactoryMethodPattern\obj\Debug\netcoreapp3.0\FactoryMethodPattern.AssemblyInfoInputs.cache
+F:\ComprehensiveLearning\DesignPatterns\FactoryMethodPattern\obj\Debug\netcoreapp3.0\FactoryMethodPattern.AssemblyInfo.cs
+F:\ComprehensiveLearning\DesignPatterns\FactoryMethodPattern\obj\Debug\netcoreapp3.0\FactoryMethodPattern.dll
+F:\ComprehensiveLearning\DesignPatterns\FactoryMethodPattern\obj\Debug\netcoreapp3.0\FactoryMethodPattern.pdb
